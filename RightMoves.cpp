@@ -75,5 +75,5 @@ int main(){
     C.print();
     C.R();
     C.R_prime();
-    C.print();
+    C.visualize();
 }
