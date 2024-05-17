@@ -9,7 +9,6 @@ using namespace std;
 int main(){
     cube C;
     C.U_prime();
-    C.U();
     C.visualize();
     return 0;
 }
