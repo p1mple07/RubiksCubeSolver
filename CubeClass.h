@@ -28,23 +28,11 @@ class cube
         faces[5] =  stoi("01010101010101010101010101010101", nullptr, 2);// orange
     }
     // R,R',R2,L,U,D,B,F,
-    void R();
-    void R_prime();
-    void R2();
-    void L();
-    void L_prime();
-    void L2();
-    void U();
-    void U_prime();
-    void U2();
-    void D();
-    void D_prime();
-    void D2();
+    void R(); void R2(); void R_prime(); 
+    void L(); void L2(); void L_prime(); 
+    void U(); void U2(); void U_prime(); 
+    void D(); void D2(); void D_prime(); 
+    void F(); void F2(); void F_prime();
+    void B(); void B2(); void B_prime();
     void visualize();
-    void F();
-    void F2();
-    void F_prime();
-    void B();
-    void B2();
-    void B_prime();
 };
