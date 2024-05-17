@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
 void cube::R(){
     unsigned int temp = faces[4];
     unsigned int rightMask = ((1<<24) - (1<<12));

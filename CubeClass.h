@@ -34,6 +34,9 @@ class cube
     void L();
     void L_prime();
     void L2();
+    void U();
+    void U_prime();
+    void U2();
     void visualize();
     void F();
     void F2();
