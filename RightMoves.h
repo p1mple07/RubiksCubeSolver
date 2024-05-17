@@ -1,10 +1,15 @@
-#include "CubeClass.h"
 #include <bits/stdc++.h>
 using namespace std;
 
+// 0 white
+// 1 yellow
+// 2 blue
+// 3 green 
+// 4 red
+// 5 orange
 
-void cube::R(){
-    unsigned int temp = faces[4];
+void cube::L(){
+    unsigned int temp = faces[5];
     unsigned int rightMask = ((1<<24) - (1<<12));
     faces[4] = faces[4]>>8;
     temp = temp<<24;
@@ -31,7 +36,7 @@ void cube::R(){
     faces[1]|=Rblue;// yellow face done
 }
 
-void cube::R_prime(){
+void cube::L_prime(){
     unsigned int temp = faces[4];
     unsigned int rightMask = ((1<<24) - (1<<12));
     faces[4] = faces[4]<<8;
@@ -59,21 +64,7 @@ void cube::R_prime(){
     faces[0]|=Rblue;// white face done
 }
 
-void cube::R2(){
-    cube::R();
-    cube::R();
-}
-void cube::print(){
-    for (int i = 0; i < 6; i++)
-    {
-        cout<<faces[i]<<" ";
-    }
-    cout<<endl;
-}
-int main(){
-    cube C;
-    C.print();
-    C.R();
-    C.R_prime();
-    C.visualize();
+void cube::L2(){
+    cube::L();
+    cube::L();
 }
