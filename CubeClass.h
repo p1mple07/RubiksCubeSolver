@@ -1,19 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 unsigned int bitSelect(unsigned int face,int r,int l){
     unsigned int temp = face&((1<<(r+1)) - (1<<l));// error can happen
     return temp;
 }
-char col(int x){
-    switch(x){
-        case 0: return 'W';
-        case 1: return 'Y';
-        case 2: return 'B';
-        case 3: return 'G';
-        case 4: return 'R';
-        case 5: return 'O';
-    }
-}
+
 class cube
 {
     unsigned int faces[6];
@@ -39,6 +31,5 @@ class cube
     void L();
     void L_prime();
     void L2();
-    void print();
     void visualize();
 };

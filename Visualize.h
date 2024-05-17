@@ -1,6 +1,16 @@
-#include "CubeClass.h"
 #include <bits/stdc++.h>
 using namespace std;
+
+static char col(int x){
+    switch(x){
+        case 0: return 'W';
+        case 1: return 'Y';
+        case 2: return 'B';
+        case 3: return 'G';
+        case 4: return 'R';
+        case 5: return 'O';
+    }
+}
 
 void cube::visualize(){
     unsigned int tl[6], tt[6], tr[6], rr[6], br[6], bb[6], bl[6], ll[6], cc[6]; 

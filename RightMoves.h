@@ -1,4 +1,3 @@
-#include "CubeClass.h"
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -62,18 +61,4 @@ void cube::R_prime(){
 void cube::R2(){
     cube::R();
     cube::R();
-}
-void cube::print(){
-    for (int i = 0; i < 6; i++)
-    {
-        cout<<faces[i]<<" ";
-    }
-    cout<<endl;
-}
-int main(){
-    cube C;
-    C.print();
-    C.R();
-    C.R_prime();
-    C.visualize();
 }
