@@ -5,6 +5,7 @@
 #include "Visualize.h"
 #include "Rotates.h"
 #include "FrontMoves.h"
+#include "BackMoves.h"
 #include <bits/stdc++.h>
 using namespace std;
 

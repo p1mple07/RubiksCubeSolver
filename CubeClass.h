@@ -41,4 +41,7 @@ class cube
     void F();
     void F2();
     void F_prime();
+    void B();
+    void B2();
+    void B_prime();
 };
