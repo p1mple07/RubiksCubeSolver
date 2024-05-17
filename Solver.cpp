@@ -4,6 +4,8 @@
 #include "UpMoves.h"
 #include "DownMoves.h"
 #include "Visualize.h"
+#include "Rotates.h"
+#include "FrontMoves.h"
 #include <bits/stdc++.h>
 using namespace std;
 
