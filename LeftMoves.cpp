@@ -70,10 +70,3 @@ void cube::print(){
     }
     cout<<endl;
 }
-int main(){
-    cube C;
-    C.print();
-    C.R();
-    C.R_prime();
-    C.print();
-}
