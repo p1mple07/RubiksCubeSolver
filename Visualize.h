@@ -69,7 +69,7 @@ void cube::visualize(){
     cout<<"       "<<col(tl[0])<<" "<<col(tt[0])<<" "<<col(tr[0])<<endl;
     cout<<"       "<<col(ll[0])<<" "<<col(cc[0])<<" "<<col(rr[0])<<endl;
     cout<<"       "<<col(bl[0])<<" "<<col(bb[0])<<" "<<col(br[0])<<endl; // white done
-
+    cout<<endl;
 
     
 }
