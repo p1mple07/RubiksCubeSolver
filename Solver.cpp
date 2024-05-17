@@ -1,12 +1,12 @@
 #include "CubeClass.h"
-#include "RightMoves.h"
-#include "LeftMoves.h"
-#include "UpMoves.h"
-#include "DownMoves.h"
+#include "Moves/RightMoves.h"
+#include "Moves/LeftMoves.h"
+#include "Moves/UpMoves.h"
+#include "Moves/DownMoves.h"
 #include "Visualize.h"
-#include "Rotates.h"
-#include "FrontMoves.h"
-#include "BackMoves.h"
+#include "Moves/Rotates.h"
+#include "Moves/FrontMoves.h"
+#include "Moves/BackMoves.h"
 #include <bits/stdc++.h>
 using namespace std;
 
