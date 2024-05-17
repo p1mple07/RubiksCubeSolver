@@ -9,6 +9,9 @@ unsigned int bitSelect(unsigned int face,int r,int l){
 class cube
 {
     unsigned int faces[6];
+    private:
+    void LeftRotate();
+    void RightRotate();
     public:
     // 0 white
     // 1 yellow
@@ -32,4 +35,7 @@ class cube
     void L_prime();
     void L2();
     void visualize();
+    void F();
+    void F2();
+    void F_prime();
 };
