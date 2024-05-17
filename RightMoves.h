@@ -1,15 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// 0 white
-// 1 yellow
-// 2 blue
-// 3 green 
-// 4 red
-// 5 orange
-
-void cube::L(){
-    unsigned int temp = faces[5];
+void cube::R(){
+    unsigned int temp = faces[4];
     unsigned int rightMask = ((1<<24) - (1<<12));
     faces[4] = faces[4]>>8;
     temp = temp<<24;
@@ -36,7 +29,7 @@ void cube::L(){
     faces[1]|=Rblue;// yellow face done
 }
 
-void cube::L_prime(){
+void cube::R_prime(){
     unsigned int temp = faces[4];
     unsigned int rightMask = ((1<<24) - (1<<12));
     faces[4] = faces[4]<<8;
@@ -64,7 +57,7 @@ void cube::L_prime(){
     faces[0]|=Rblue;// white face done
 }
 
-void cube::L2(){
-    cube::L();
-    cube::L();
+void cube::R2(){
+    cube::R();
+    cube::R();
 }
