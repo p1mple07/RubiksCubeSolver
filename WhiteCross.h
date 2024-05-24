@@ -209,7 +209,7 @@ void cube::yellowCross(){
         if(visited[1]){
             // cout<<endl;
             for(auto u:revMoveOrder){
-                // cout<<u<<" - ";
+                cout<<u<<" - ";
                 switch (u)
                 {
                 case 1:R(); break;
@@ -226,12 +226,49 @@ void cube::yellowCross(){
                 case 12:B_prime(); break;
                 }
             }
-            // cout<<endl;
+            cout<<endl;
         }
         else{
             cout<<"up";
             U();
         }
+    }
+}
+
+
+void cube::whiteCross(){
+    int c = 0;
+    vector<bool> vis(6, false);
+    while(c!=4){
+        for(int i = 2; i<6; i++){
+            if(!vis[i] && (bitSelect(faces[i],27,24)>>24)== i){
+
+                switch(i){
+                    case 2: 
+                        if(bitSelect(faces[1],11,8)==0){
+                            F();F();
+                            vis[i] = true; c++;
+                        }break;
+                    case 3: 
+                        if(bitSelect(faces[1],27,24)==0){
+                            B();B();
+                            vis[i] = true; c++;
+                        }break;
+                    case 4: 
+                        if(bitSelect(faces[1],19,16)==0){
+                            R();R();
+                            vis[i] = true; c++;
+                        }break;
+                    case 5: 
+                        if(bitSelect(faces[1],3,0)==0){
+                            L();L();
+                            vis[i] = true; c++;
+                        }break;
+                }
+            }
+        }
+        cout<<c<<"="<<endl;
+        U();
     }
 }
 

@@ -11,17 +11,19 @@ int main(){
     C.U();
     C.D();
     C.B();
-    C.F();
-    C.U();
-    C.D();
-    C.U();
-    C.D();
-    C.L();
-    C.U();
-    C.D();
-    C.B();
+    // C.F();
+    // C.U();
+    // C.D();
+    // C.U();
+    // C.D();
+    // C.L();
+    // C.U();
+    // C.D();
+    // C.B();
     C.visualize();
     C.yellowCross();
+    C.visualize();
+    C.whiteCross();
     C.visualize();
     return 0;
 }

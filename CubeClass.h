@@ -43,5 +43,6 @@ class cube
     void mark(vector<unsigned int>&visited,int move);
     set<int> findEdge(unsigned int face,int color);
     void yellowCross();
+    void whiteCross();
     pair<int,int> positionEdge();
 };
