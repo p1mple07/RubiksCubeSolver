@@ -12,10 +12,7 @@ using namespace std;
 
 int main(){
     cube C;
-    C.R();
+    C.d();
     C.visualize();
-    C.D_prime();
-    C.visualize();
-    C.U();
     return 0;
 }
