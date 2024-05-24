@@ -44,5 +44,6 @@ class cube
     set<int> findEdge(unsigned int face,int color);
     void yellowCross();
     void whiteCross();
+    void scramble();
     pair<int,int> positionEdge();
 };
