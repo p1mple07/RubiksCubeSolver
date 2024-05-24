@@ -1,18 +1,27 @@
 #include "CubeClass.h"
-#include "Moves/RightMoves.h"
-#include "Moves/LeftMoves.h"
-#include "Moves/UpMoves.h"
-#include "Moves/DownMoves.h"
 #include "Visualize.h"
-#include "Moves/Rotates.h"
-#include "Moves/FrontMoves.h"
-#include "Moves/BackMoves.h"
+#include "WhiteCross.h"
 #include <bits/stdc++.h>
 using namespace std;
 
 int main(){
     cube C;
-    C.d();
+    C.R();
+    C.L();
+    C.U();
+    C.D();
+    C.B();
+    C.F();
+    C.U();
+    C.D();
+    C.U();
+    C.D();
+    C.L();
+    C.U();
+    C.D();
+    C.B();
+    C.visualize();
+    C.yellowCross();
     C.visualize();
     return 0;
 }
