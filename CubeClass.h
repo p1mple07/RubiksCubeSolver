@@ -8,7 +8,7 @@ unsigned int bitSelect(unsigned int face,int r,int l){
 
 class cube
 {
-    unsigned int faces[6];
+    vector<unsigned int>faces;
     private:
     void LeftRotate();
     void RightRotate();
@@ -20,12 +20,16 @@ class cube
     // 4 red
     // 5 orange
     cube(){
+        faces.resize(6);
         faces[0] =  0;// white
         faces[1] =  stoi("00010001000100010001000100010001", nullptr, 2);// yellow
         faces[2] =  stoi("00100010001000100010001000100010", nullptr, 2);// blue this is towords observer
         faces[3] =  stoi("00110011001100110011001100110011", nullptr, 2);// green
         faces[4] =  stoi("01000100010001000100010001000100", nullptr, 2);// red
         faces[5] =  stoi("01010101010101010101010101010101", nullptr, 2);// orange
+    }
+    cube(vector<unsigned int>faces1){
+        faces = faces1;
     }
     // R,R',R2,L,U,D,B,F,
     void R(); void R2(); void R_prime(); 
@@ -35,4 +39,9 @@ class cube
     void F(); void F2(); void F_prime();
     void B(); void B2(); void B_prime();
     void visualize();
+    bool check(vector<unsigned int>&visited);
+    void mark(vector<unsigned int>&visited,int move);
+    set<int> findEdge(unsigned int face,int color);
+    void yellowCross();
+    pair<int,int> positionEdge();
 };
