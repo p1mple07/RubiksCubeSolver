@@ -2,6 +2,8 @@
 using namespace std;
 
 void cube::scramble(){
+    srand (time (0));  // to generate different random numbers at each execution step
+	ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
     for(int i = 0; i<100; i++){
         int x = rand()%12;
         switch(x){

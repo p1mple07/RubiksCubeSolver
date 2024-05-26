@@ -7,20 +7,6 @@ using namespace std;
 
 int main(){
     cube C;
-    // C.R();
-    // C.L();
-    // C.U();
-    // C.D();
-    // C.B();
-    // C.F();
-    // C.U();
-    // C.D();
-    // C.U();
-    // C.D();
-    // C.L();
-    // C.U();
-    // C.D();
-    // C.B();
     C.scramble();
     C.visualize();
     C.yellowCross();
