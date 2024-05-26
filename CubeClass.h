@@ -42,8 +42,16 @@ class cube
     bool check(vector<unsigned int>&visited);
     void mark(vector<unsigned int>&visited,int move);
     set<int> findEdge(unsigned int face,int color);
+    bool finalCheck(int face, int pos);
+    set <int> adjcolor(int face, int pos);
+    set <int> findCorner(unsigned int face, int color, int f); 
+    set<int> whiteCheck();
     void yellowCross();
     void whiteCross();
+    void firstLayer();
+    
+    void solve();
     void scramble();
+
     pair<int,int> positionEdge();
 };

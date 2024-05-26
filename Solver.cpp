@@ -1,31 +1,36 @@
 #include "CubeClass.h"
 #include "Visualize.h"
-#include "WhiteCross.h"
 #include "Scramble.h"
+#include "Solve.h"
 #include <bits/stdc++.h>
 using namespace std;
 
 int main(){
     cube C;
-    // C.R();
-    // C.L();
-    // C.U();
-    // C.D();
-    // C.B();
-    // C.F();
-    // C.U();
-    // C.D();
-    // C.U();
-    // C.D();
-    // C.L();
-    // C.U();
-    // C.D();
-    // C.B();
     C.scramble();
+
+    // C.L_prime();
+    // C.U();
+    // C.L();
+    // C.B();
+    // C.U();
+    // C.B_prime();
+    // C.B_prime();
+    // C.U_prime();
+    // C.B();
+    // C.R();
+    // C.U();
+    // C.R_prime();
+    // C.U_prime();
+    // C.R();
+    // C.U();
+    // C.R_prime(); 
+    
     C.visualize();
-    C.yellowCross();
-    C.visualize();
-    C.whiteCross();
+    C.solve();
+    // C.yellowCross();
+    // C.visualize();
+    // C.whiteCross();
     C.visualize();
     return 0;
 }

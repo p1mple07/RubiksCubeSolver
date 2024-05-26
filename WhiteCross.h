@@ -1,10 +1,3 @@
-#include "Moves/Rotates.h"
-#include "Moves/FrontMoves.h"
-#include "Moves/BackMoves.h"
-#include "Moves/RightMoves.h"
-#include "Moves/LeftMoves.h"
-#include "Moves/UpMoves.h"
-#include "Moves/DownMoves.h"
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -143,7 +136,7 @@ void cube::yellowCross(){
                         if(bitSelect(moveMask,1,0)==0) tempMask = bitSelect(tempMask,9,8)^tempMask;// F moves removed
                         if(bitSelect(moveMask,11,10)==0) tempMask = bitSelect(tempMask,1,0)^tempMask;// R moves removed                            
                         q.push({pushCube,tempMask, moves});
-                        pushCube.mark(visited,5);
+                        // pushCube.mark(visited,5);
                         break;
                     case 5:
                         pushCube.U_prime();
@@ -152,7 +145,7 @@ void cube::yellowCross(){
                         if(bitSelect(moveMask,1,0)==0) tempMask = bitSelect(tempMask,11,10)^tempMask;// B moves removed
                         if(bitSelect(moveMask,11,10)==0) tempMask = bitSelect(tempMask,3,2)^tempMask;// L moves removed
                         q.push({pushCube,tempMask, moves});
-                        pushCube.mark(visited,5);
+                        // pushCube.mark(visited,5);
                         break;
                     case 6:
                         pushCube.D();
@@ -206,7 +199,7 @@ void cube::yellowCross(){
             }
             if(visited[1])break;
         }
-        if(visited[1]){
+        // if(visited[1]){
             // cout<<endl;
             for(auto u:revMoveOrder){
                 cout<<u<<" - ";
@@ -227,11 +220,11 @@ void cube::yellowCross(){
                 }
             }
             cout<<endl;
-        }
-        else{
-            cout<<"up";
-            U();
-        }
+        // }
+        // else{
+        //     cout<<"up";
+        //     U();
+        // }
     }
 }
 
