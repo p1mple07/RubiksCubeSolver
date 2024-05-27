@@ -39,16 +39,25 @@ class cube
     void F(); void F2(); void F_prime();
     void B(); void B2(); void B_prime();
     void visualize();
+
+    bool checkWhiteCross();
+
     bool check(vector<unsigned int>&visited);
     void mark(vector<unsigned int>&visited,int move);
     set<int> findEdge(unsigned int face,int color);
+    void yellowCross();
+    void whiteCross();
+
     bool finalCheck(int face, int pos);
     set <int> adjcolor(int face, int pos);
     set <int> findCorner(unsigned int face, int color, int f); 
     set<int> whiteCheck();
-    void yellowCross();
-    void whiteCross();
     void firstLayer();
+
+    set<int> secondLayerNotOnPos();
+    void tempMove_R();
+    void tempMove_L();
+    void secondLayer();
     
     void solve();
     void scramble();

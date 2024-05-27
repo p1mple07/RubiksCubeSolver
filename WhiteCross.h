@@ -23,7 +23,6 @@ bool cube::check(vector<unsigned int>&visi){
             else return false;
         }
     }
-    
 }
 void cube::mark(vector<unsigned int>&visited,int move){
     for (int i = 0; i < 6; i++)
