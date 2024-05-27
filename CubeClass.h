@@ -58,6 +58,10 @@ class cube
     void tempMove_R();
     void tempMove_L();
     void secondLayer();
+
+    void move1();
+    void move2();
+    void thirdLayer();
     
     void solve();
     void scramble();

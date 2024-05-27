@@ -8,6 +8,7 @@
 #include "WhiteCross.h"
 #include "FirstLayer.h"
 #include "SecondLayer.h"
+#include "ThirdLayer.h"
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -34,6 +35,8 @@ void cube::solve(){
         cout<<"inside\n";
     } 
     firstLayer();
-    visualize();
+    // visualize();
     secondLayer();
+    visualize();
+    thirdLayer();
 }
