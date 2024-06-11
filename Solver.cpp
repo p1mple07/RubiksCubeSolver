@@ -2,12 +2,16 @@
 #include "Visualize.h"
 #include "Scramble.h"
 #include "Solve.h"
+#include "readInput.h"
 #include <bits/stdc++.h>
 using namespace std;
 
-int main(){
+int main(int argc, char* argv[]){
     cube C;
-    C.scramble();
+
+    // C.scramble();
+    C.read_input(argv[1]);
+    C.visualize();
 
     // C.L_prime();
     // C.U();
@@ -26,11 +30,11 @@ int main(){
     // C.U();
     // C.R_prime(); 
     
-    C.visualize();
-    C.solve();
+    // C.visualize();
+    // C.solve();
     // C.yellowCross();
     // C.visualize();
     // C.whiteCross();
-    C.visualize();
+    // C.visualize();
     return 0;
 }

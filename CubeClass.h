@@ -67,4 +67,5 @@ class cube
     void scramble();
 
     pair<int,int> positionEdge();
+    void read_input(char *argc);
 };
