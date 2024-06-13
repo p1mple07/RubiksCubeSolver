@@ -61,7 +61,15 @@ class cube
 
     void move1();
     void move2();
+    void move3();
+    void move4();
+    void move5();
+    void thirdYellowCross();
+    void thirdYellowCrossOnPos();
+    void cornerOnPos();
+    void makeCorners();
     void thirdLayer();
+
     
     void solve();
     void scramble();

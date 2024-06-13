@@ -9,8 +9,8 @@ using namespace std;
 int main(int argc, char* argv[]){
     cube C;
 
-    // C.scramble();
-    C.read_input(argv[1]);
+    C.scramble();
+    // C.read_input(argv[1]);
     C.visualize();
 
     // C.L_prime();
@@ -31,7 +31,7 @@ int main(int argc, char* argv[]){
     // C.R_prime(); 
     
     // C.visualize();
-    // C.solve();
+    C.solve();
     // C.yellowCross();
     // C.visualize();
     // C.whiteCross();

@@ -39,4 +39,5 @@ void cube::solve(){
     secondLayer();
     visualize();
     thirdLayer();
+    visualize();
 }
