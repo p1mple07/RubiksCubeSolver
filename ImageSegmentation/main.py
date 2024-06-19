@@ -102,7 +102,7 @@ print("Cube data written to cube_data.txt")
 
 import subprocess
 # Run the C++ solver
-result = subprocess.run(["../Solver.exe", "cube_data.txt"], capture_output=True, text=True)
+result = subprocess.run(["../Solver", "cube_data.txt"], capture_output=True, text=True)
 
 # Check if the C++ solver ran successfully
 if result.returncode == 0:
