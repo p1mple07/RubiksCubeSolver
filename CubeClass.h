@@ -12,6 +12,23 @@ class cube
     private:
     void LeftRotate();
     void RightRotate();
+   
+    /*
+    1:R();
+    2:R_prime();
+    3:L();
+    4:L_prime();
+    5:U();
+    6:U_prime();
+    7:D();
+    8:D_prime();
+    9:F();
+    10:F_prime();
+    11:B();
+    12:B_prime();
+    13: leftrotate
+    14: rightrotate
+    */
     public:
     // 0 white
     // 1 yellow
@@ -19,7 +36,9 @@ class cube
     // 3 green 
     // 4 red
     // 5 orange
+    vector<int> moves; 
     cube(){
+        moves.clear();
         faces.resize(6);
         faces[0] =  0;// white
         faces[1] =  stoi("00010001000100010001000100010001", nullptr, 2);// yellow

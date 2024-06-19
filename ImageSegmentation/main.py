@@ -67,7 +67,7 @@ string_to_char = {
 }
 
 for i in range(6):
-    img_path = "./Images/"+str(i) + ".png"
+    img_path = "./Images/"+str(i) + ".jpeg"
     im = Image.open(img_path).convert('RGB')
     centers = get_center_coordinates(im.width, im.height)
     face_edge_distance = min(im.width, im.height) // 7

@@ -77,9 +77,9 @@ set<int> cube::whiteCheck(){
                 case 7: if(col.find(2)!=col.end() && col.find(5)!=col.end()) flag = true; break;
             }
             for(auto x: col){
-                cout<<x<<" - ";
+                // cout<<x<<" - ";
             }
-            cout<<"  &  "<<endl;
+            // cout<<"  &  "<<endl;
             
             if(flag) ans.insert(i);
         }
@@ -91,7 +91,7 @@ void cube::firstLayer(){
     while(true){
         set<int> whitesOnPos = whiteCheck();
         if(whitesOnPos.size() == 4) break;
-        cout<<whitesOnPos.size()<<"  ..  ";
+        // cout<<whitesOnPos.size()<<"  ..  ";
         
         int moveMask = (1<<12) - 1;
         moveMask = bitSelect(moveMask,7,6)^moveMask;// U moves removed
@@ -117,16 +117,16 @@ void cube::firstLayer(){
         set <int> adjcol = adjcolor(currwhite.first, currwhite.second);
         int finalWhitePos;
         for(auto x: adjcol){
-                cout<<x<<" -- ";
+                // cout<<x<<" -- ";
             }
-            cout<<"  %  ";
+            // cout<<"  %  ";
             
         if(adjcol.find(3)!=adjcol.end() && adjcol.find(5)!=adjcol.end()) finalWhitePos = 1;
         if(adjcol.find(3)!=adjcol.end() && adjcol.find(4)!=adjcol.end()) finalWhitePos = 3;
         if(adjcol.find(2)!=adjcol.end() && adjcol.find(4)!=adjcol.end()) finalWhitePos = 5;
         if(adjcol.find(2)!=adjcol.end() && adjcol.find(5)!=adjcol.end()) finalWhitePos = 7;
 
-        cout<<currwhite.first<<" -- "<<currwhite.second<<" {} "<<finalWhitePos<<"// ";
+        // cout<<currwhite.first<<" -- "<<currwhite.second<<" {} "<<finalWhitePos<<"// ";
         // vector<unsigned int>visited(6,0);
         vector<unsigned int>temp(6,0);
         temp[currwhite.first]|=(1<<((currwhite.second+1)*4)) - (1<<((currwhite.second)*4));
@@ -218,7 +218,8 @@ void cube::firstLayer(){
             if(MoveOrder.size()) break;
         }
         for(auto u:MoveOrder){
-            cout<<u<<" +  ";
+            moves.push_back(u);
+            // cout<<u<<" +  ";
             switch (u)
             {
             case 1:R(); break;
@@ -235,7 +236,7 @@ void cube::firstLayer(){
             case 12:B_prime(); break;
             }
         }
-        cout<<endl;
+        // cout<<endl;
 
 
 

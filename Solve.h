@@ -32,12 +32,12 @@ void cube::solve(){
     if(!checkWhiteCross()){
         yellowCross();
         whiteCross();
-        cout<<"inside\n";
+        // cout<<"inside\n";
     } 
     firstLayer();
     // visualize();
     secondLayer();
-    visualize();
+    // visualize();
     thirdLayer();
-    visualize();
+    // visualize();
 }

@@ -201,7 +201,8 @@ void cube::yellowCross(){
         // if(visited[1]){
             // cout<<endl;
             for(auto u:revMoveOrder){
-                cout<<u<<" - ";
+                // cout<<u<<" - ";
+                moves.push_back(u);
                 switch (u)
                 {
                 case 1:R(); break;
@@ -218,10 +219,10 @@ void cube::yellowCross(){
                 case 12:B_prime(); break;
                 }
             }
-            cout<<endl;
+            // cout<<endl;
         // }
         // else{
-        //     cout<<"up";
+            // cout<<"up";
         //     U();
         // }
     }
@@ -239,27 +240,37 @@ void cube::whiteCross(){
                     case 2: 
                         if(bitSelect(faces[1],11,8)==0){
                             F();F();
+                            moves.push_back(9);
+                            moves.push_back(9);
                             vis[i] = true; c++;
                         }break;
                     case 3: 
                         if(bitSelect(faces[1],27,24)==0){
                             B();B();
+                            moves.push_back(11);
+                            moves.push_back(11);
                             vis[i] = true; c++;
                         }break;
                     case 4: 
                         if(bitSelect(faces[1],19,16)==0){
                             R();R();
+                            moves.push_back(1);
+                            moves.push_back(1);
                             vis[i] = true; c++;
                         }break;
                     case 5: 
                         if(bitSelect(faces[1],3,0)==0){
                             L();L();
+                            moves.push_back(3);
+                            moves.push_back(3);
                             vis[i] = true; c++;
                         }break;
                 }
             }
         }
-        cout<<c<<"="<<endl;
+        // cout<<c<<"="<<endl;
+        if(c==4) break;
+        moves.push_back(5);
         U();
     }
 }
